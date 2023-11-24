@@ -36,7 +36,7 @@ type PageComponentProps = MovieList & {}
 export const ListPage: React.FC<PageComponentProps> = ({ results }) => {
   return (
     <main>
-      <section className="container max-w-full space-y-9 py-14">
+      <section className="container max-w-full space-y-9 py-24">
         <MovieList list={results} />
         <PaginationButtons />
       </section>

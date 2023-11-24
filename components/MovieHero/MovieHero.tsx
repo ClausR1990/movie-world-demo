@@ -1,8 +1,7 @@
 import Image from "next/image"
 import { MovieDetail } from "@/components/PageComponent/DetailPage"
-import { PlayCircle, ArrowLeftCircle } from "lucide-react"
+import { PlayCircle } from "lucide-react"
 import { TrailerDialog } from "@/components/TrailerDialog"
-import { Button } from "@/components/ui/button"
 import { GoBackButton } from "./GoBackButton"
 
 export type MovieHeroProps = MovieDetail & {}
@@ -17,7 +16,7 @@ export const MovieHero: React.FC<MovieHeroProps> = ({
 }) => {
   const releaseDate = new Date(release_date)
   return (
-    <section className="relative w-full text-white before:absolute before:left-0 before:top-0 before:z-20 before:h-full before:w-full before:bg-black/50 before:content-['']">
+    <section className="relative z-[2000] w-full text-white before:absolute before:left-0 before:top-0 before:z-20 before:h-full before:w-full before:bg-black/50 before:content-['']">
       <Image
         src={`https://image.tmdb.org/t/p/original/${backdrop_path}`}
         alt={title}
