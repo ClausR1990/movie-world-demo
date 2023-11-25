@@ -22,15 +22,17 @@ export const MovieHero: React.FC<MovieHeroProps> = ({
         alt={title}
         width={1920}
         height={1080}
-        className="aspect-video animate-fade animate-delay-300 animate-duration-500 animate-once animate-ease-in"
+        className="md:aspect-video h-screen animate-fade object-cover animate-delay-300 animate-duration-500 animate-once animate-ease-in"
         quality={70}
         priority
       />
       <div className="container absolute top-0 z-50 flex h-full w-full items-end py-36">
         <GoBackButton className="absolute top-8 z-50" />
-        <div className="animate-fade-up space-y-9 animate-delay-300 animate-duration-500 animate-once animate-ease-in">
-          <h1 className="-ml-2 font-primary text-9xl font-semibold">{title}</h1>
-          <div className="space-x-4 font-bold tracking-wider">
+        <div className="animate-fade-up space-y-3 animate-delay-300 animate-duration-500 animate-once animate-ease-in md:space-y-9">
+          <h1 className="font-primary text-2xl font-semibold md:-ml-2 md:text-5xl lg:text-9xl">
+            {title}
+          </h1>
+          <div className="w-full flex-wrap space-x-4 font-bold tracking-wider">
             <span>{releaseDate.getFullYear()}</span>
             <span>•</span>
             <span className="space-x-2">
@@ -42,12 +44,14 @@ export const MovieHero: React.FC<MovieHeroProps> = ({
               ))}
             </span>
           </div>
-          <p className="w-1/2 text-xl tracking-wide">{overview}</p>
+          <p className="text-xs tracking-wide md:w-1/2 md:text-xl">
+            {overview}
+          </p>
           <TrailerDialog
             triggerButton={
               <button className="flex items-center gap-3">
-                <PlayCircle className="h-12 w-12" />
-                <span className="text-2xl">Play trailer</span>
+                <PlayCircle className="h-8 w-8 md:h-12 md:w-12" />
+                <span className="text-lg md:text-2xl">Play trailer</span>
               </button>
             }
             movieId={id}

@@ -16,7 +16,7 @@ export const GoBackButton = ({ className }: { className: string }) => {
       onClick={() => router.back()}
       asChild
     >
-      <ArrowLeftCircle className="h-12 w-12" />
+      <ArrowLeftCircle className="h-8 w-8 md:h-12 md:w-12" />
     </Button>
   )
 }

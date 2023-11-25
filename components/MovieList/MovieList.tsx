@@ -7,7 +7,7 @@ type MovieListProps = {
 
 export const MovieList: React.FC<MovieListProps> = ({ list }) => {
   return (
-    <section className="grid grid-cols-4 gap-4">
+    <section className="grid grid-cols-2 gap-4 md:grid-cols-4">
       {list.map((item) => (
         <MovieCard key={item.id} {...item} />
       ))}
