@@ -48,6 +48,7 @@ export const CastCard: React.FC<Cast> = ({
           height={500}
           quality={50}
           className="transition-opacity group-hover:opacity-30"
+          loading="lazy"
         />
       ) : (
         <div className="flex h-full w-full items-center justify-center bg-muted">

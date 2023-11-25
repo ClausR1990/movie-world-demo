@@ -24,6 +24,7 @@ export const MovieHero: React.FC<MovieHeroProps> = ({
         height={1080}
         className="md:aspect-video h-screen animate-fade object-cover animate-delay-300 animate-duration-500 animate-once animate-ease-in"
         quality={70}
+        loading="eager"
         priority
       />
       <div className="container absolute top-0 z-50 flex h-full w-full items-end py-36">

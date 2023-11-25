@@ -46,7 +46,7 @@ export default function RootLayout({
           <Navigation />
           {children}
           <Footer />
-          <div className="container fixed bottom-0 left-0 z-50 mb-5">
+          <div className="container fixed bottom-0 left-0 z-50 mb-5 w-auto">
             <ThemeToggle />
           </div>
         </ThemeProvider>
