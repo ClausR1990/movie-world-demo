@@ -9,6 +9,8 @@ type Props = {
   searchParams: Record<string, string> | undefined
 }
 
+export const revalidate = 86000
+
 async function getDataFromParameters({ params, searchParams }: Props) {
   const urlParameters = new URLSearchParams(searchParams).toString()
   const fetchurl =
