@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## [Hosted Link](https://movie-world-demo.vercel.app/movie/now_playing)
+
 ## Getting Started
 
 First, run the development server:
